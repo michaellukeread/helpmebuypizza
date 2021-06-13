@@ -12,19 +12,11 @@ const Home = () => {
   })
 
   return (
-    <div className="container">
-      <div className="main">
-        <h1>Help Me Buy Pizza</h1>
-        <p>Ever since I was a young lad, I dreamed of having a pizza to eat whenever I wanted. Please help me make that dream come true and donate today.</p>
-        <div className="btn" onClick={() => setClicked(true)}>Donate Now</div>
-        <div className="countContainer">
-          <h3>Pizzas Purchased:</h3>
-          <p className="count">#134</p>
-        </div>
-      </div>
-      <div>
-        <img src="pizza.jpg" alt="a woodfire pizza with olives" height="500px" width="500px" />
-      </div>
+    <div className="pizza flex flex-col justify-center items-center h-screen text-white gap-6">
+        <p className="text-5xl md:text-7xl font-bold">Help Me Buy Pizza</p>
+        <p className="text-xl w-9/12 lg:w-8/12 xl:w-1/2 text-center">Ever since I was a young lad, I dreamed of having a pizza to eat whenever I wanted. Please help me make that dream come true and donate today.</p>
+        <button type="button" className="inline-flex items-center px-6 py-3 border border-transparent text-lg font-bold rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onClick={() => setClicked(true)}>Donate Now</button>
+        <p className="fixed bottom-4 left-6">Made by Michael and Sam</p>
     </div>
   )
 }
